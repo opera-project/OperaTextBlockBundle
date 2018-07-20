@@ -14,6 +14,11 @@ class Text extends BaseBlock implements BlockTypeInterface
         return 'text';
     }
 
+    public function getTemplate() : string
+    {
+        return sprintf('@OperaTextBlock/blocks/%s.html.twig', $this->getType());
+    }
+
     public function createAdminConfigurationForm(FormBuilderInterface $builder)
     {
         $builder->add('text', TextareaType::class, [
