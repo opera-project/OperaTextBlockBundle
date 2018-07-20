@@ -21,8 +21,6 @@ class Text extends BaseBlock implements BlockTypeInterface
 
     public function createAdminConfigurationForm(FormBuilderInterface $builder)
     {
-        $builder->add('text', TextareaType::class, [
-            'required' => true,
-        ]);
+        $builder->add('text', TextareaType::class);
     }
 }
