@@ -25,5 +25,10 @@
     },
     "suggest": {
         "friendsofsymfony/ckeditor-bundle": "To activate ckeditor for admin in block"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
     }
 }
