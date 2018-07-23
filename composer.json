@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "opera-project/core-bundle": "dev-master"
+        "opera-project/core-bundle": "^0.1"
     },
     "autoload": {
         "psr-4": {
