@@ -4,7 +4,7 @@ namespace Opera\TextBlockBundle\BlockType;
 
 use Opera\CoreBundle\BlockType\BaseBlock;
 use Opera\CoreBundle\BlockType\BlockTypeInterface;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Opera\CoreBundle\Form\Type\CkEditorOrTextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 
 class Text extends BaseBlock implements BlockTypeInterface
@@ -21,6 +21,6 @@ class Text extends BaseBlock implements BlockTypeInterface
 
     public function createAdminConfigurationForm(FormBuilderInterface $builder)
     {
-        $builder->add('text', TextareaType::class);
+        $builder->add('text', CkEditorOrTextareaType::class);    
     }
 }

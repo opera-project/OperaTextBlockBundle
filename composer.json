@@ -22,5 +22,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^7.2"
+    },
+    "suggest": {
+        "friendsofsymfony/ckeditor-bundle": "To activate ckeditor for admin in block"
     }
 }
