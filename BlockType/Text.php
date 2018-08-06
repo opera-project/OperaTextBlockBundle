@@ -6,6 +6,7 @@ use Opera\CoreBundle\BlockType\BaseBlock;
 use Opera\CoreBundle\BlockType\BlockTypeInterface;
 use Opera\CoreBundle\Form\Type\CkEditorOrTextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Opera\CoreBundle\Entity\Block;
 
 class Text extends BaseBlock implements BlockTypeInterface
 {
@@ -14,7 +15,7 @@ class Text extends BaseBlock implements BlockTypeInterface
         return 'text';
     }
 
-    public function getTemplate() : string
+    public function getTemplate(Block $block) : string
     {
         return sprintf('@OperaTextBlock/blocks/%s.html.twig', $this->getType());
     }
