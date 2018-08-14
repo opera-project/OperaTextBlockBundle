@@ -1,1 +1,3 @@
-{{ block.configuration.text | raw }}
+{% if block.configuration %}
+    {{ block.configuration.text | raw }}
+{% endif %}
